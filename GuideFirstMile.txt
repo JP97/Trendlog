@@ -1,0 +1,6 @@
+﻿0. Opret asp.net core MVC solution med 3.0
+1. Udskift css
+2. Frakobl lib mappen
+3. indsæt indhold fra index.html i index.cshtml
+4. Flyt menuen fra index.cshtml over i _Layout.cshtml
+5. 2. Brug find and replace all på "assets" -> "../assets" i entire solution
