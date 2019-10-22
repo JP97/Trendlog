@@ -8,7 +8,7 @@ namespace Trendlogg.Models
     public class BandwidthStats
     {
         public static int GeneratedLeads { get; set; }
-        public int SubmittedTickers { get; set; }
-        public int ServerAllocation { get; set; }
+        public static int SubmittedTickers { get; set; }
+        public static int ServerAllocation { get; set; }
     }
 }

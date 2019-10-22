@@ -16,12 +16,14 @@ namespace Trendlogg.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-        }
+        } 
 
         public IActionResult Index()
         {
             //ViewData["BandwidthStats"] = 50;
             BandwidthStats.GeneratedLeads = 10;
+            BandwidthStats.SubmittedTickers = 30;
+            BandwidthStats.ServerAllocation = 50;
             return View();
         }
 
