@@ -20,7 +20,8 @@ namespace Trendlogg.Controllers
 
         public IActionResult Index()
         {
-
+            //ViewData["BandwidthStats"] = 50;
+            BandwidthStats.GeneratedLeads = 10;
             return View();
         }
 
