@@ -8,7 +8,7 @@ namespace Trendlogg.Models
     public class Point
     {
         public int PointID { get; set; }
-        public DateTime TimeSTamp { get; set; }
+        public DateTime TimeStamp { get; set; }
         public int Value { get; set; }
     }
 }
