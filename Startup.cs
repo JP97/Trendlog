@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Trendlogg.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Trendlogg
 {
@@ -27,7 +28,7 @@ namespace Trendlogg
             services.AddControllersWithViews();
 
             services.AddDbContext<TrendLoggContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("TrendlogContext")));
+                options.UseSqlServer(Configuration.GetConnectionString("TrendloggContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
