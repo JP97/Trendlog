@@ -7,7 +7,7 @@ using Trendlogg.Models;
 
 namespace Trendlogg.Data
 {
-    public class TrendLogContext : DbContext
+    public class TrendLoggContext : DbContext
     {
         public DbSet<Channel> Channels { get; set; }
         public DbSet<Feed> Feeds { get; set; }
