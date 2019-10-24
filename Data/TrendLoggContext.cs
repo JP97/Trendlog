@@ -9,6 +9,9 @@ namespace Trendlogg.Data
 {
     public class TrendLoggContext : DbContext
     {
+        public TrendLoggContext(DbContextOptions<TrendLoggContext> options) : base(options)
+        {
+        }
         public DbSet<Channel> Channels { get; set; }
         public DbSet<Feed> Feeds { get; set; }
         public DbSet<Point> Points { get; set; }
